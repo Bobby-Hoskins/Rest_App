@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
 
 * {
     margin: 0;
@@ -8,11 +9,11 @@
 
 /* CSS Variables */
 :root {
-    --main-color:#3C8CE7;
-    --secondary-color:#14248A;
-    --light-color:#F9F5FF;
-    --dark-color:#28262C;
-    --main-text: font-family: 'Righteous', cursive;
+    --main-color:#00EAFF;
+    --secondary-color:#00B3FE;
+    --accent-color: #EE4266;
+    --light-color:#F8F9FA;
+    --dark-color:#272932;
 
 }
 
@@ -63,7 +64,7 @@ a {
     left: 100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #fff;
+    background-image: linear-gradient(to bottom, #3c8ce7, #00a6f6, #00befe, #00d4ff, #00eaff);
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -77,7 +78,16 @@ a {
 
 .nav-item {
     margin: 2.5rem 0;
-} 
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--light-color);
+    font-size: 1.75rem;
+    font-family: 'Teko', sans-serif;
+
+}
     /* Mobile Hamburger Styles */
 .mobile-hamburger {
     display: block;
