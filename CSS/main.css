@@ -64,7 +64,7 @@ a {
     left: 100%;
     top: 5rem;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, #3c8ce7, #00a6f6, #00befe, #00d4ff, #00eaff);
+    background-image: linear-gradient( 135deg, #3C8CE7 10%, #00EAFF 100%);
     width: 100%;
     border-radius: 10px;
     text-align: center;
