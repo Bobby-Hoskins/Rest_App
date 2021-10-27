@@ -1,0 +1,49 @@
+@media (min-width: 1200px) {
+
+    /* Hides Mobile Display */
+    .mobile-hamburger {
+        display: none;
+    }
+
+    .nav-bar {
+        padding: 0 1rem;
+    }
+
+    /* Logo */
+    .logo {
+        height: 100px;
+    }
+
+    /* Desktop Navigation Menu */
+    .nav-menu {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        top: 1rem;
+        width: 50%;
+        padding-top: 1.75rem;
+        padding-right: 3rem;
+        padding-bottom: 0;
+        background-image: none;
+        box-shadow: none;
+    }
+
+    .nav-item {
+        margin-left: 3rem;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: var(--light-color);
+        font-size: 1.85rem;
+        font-family: 'Teko', sans-serif;
+    }
+
+    /* Hover Effects */
+    .nav-link:hover {
+        color: var(--dark-color);
+    }
+
+
+}

@@ -17,5 +17,3 @@ function closeMenu() {
     mobileHamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
-
-
