@@ -40,9 +40,18 @@
         font-family: 'Teko', sans-serif;
     }
 
+    .cross {
+        top: 60%;
+    }
+
+    .current {
+        border-bottom: solid var(--light-color);
+    }
+
     /* Hover Effects */
     .nav-link:hover {
-        color: var(--dark-color);
+        color: var(--secondary-color);
+        border-bottom: solid var(--light-color);
     }
 
 
