@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Teko:wght@300&display=swap');
 
+/* Global Presets */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 /* CSS Variables */
@@ -12,11 +14,6 @@
     --secondary-color: #00B3FE;
     --light-color: #F8F9FA;
     --dark-color: #272932;
-}
-
-/* Global Styles */
-li {
-    list-style: none;
 }
 
 /* Main Navigation */
@@ -110,7 +107,7 @@ li {
     text-align: center;
     align-items: center;
     font-family: 'Bad Script', cursive;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: var(--light-color);
 }
 
@@ -119,4 +116,19 @@ li {
     width: 200px;
     position: absolute;
     top: 55%;
+}
+
+/* Footer */
+footer {
+    background-image: linear-gradient(to right, #272932, #39465a, #426885, #408caf, #32b3d5, #32b3d5, #32b3d5, #32b3d5, #408caf, #426885, #39465a, #272932);
+}
+
+.footer-content {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--light-color);
+
 }
