@@ -1,5 +1,12 @@
+/* Medium Screen Size Styling */
 @media (min-width: 768px) {
+
+    /* Main Content */
+    .main-header {
+        font-size: 1.5rem;
+    }
+
     .cross {
-        top: 42%;
+        width: 215px;
     }
 }

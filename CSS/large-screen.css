@@ -1,3 +1,4 @@
+/* Large Screen Styling */
 @media (min-width: 1200px) {
 
     /* Hides Mobile Display */
@@ -40,12 +41,26 @@
         font-family: 'Teko', sans-serif;
     }
 
-    .cross {
-        top: 60%;
-    }
-
     .current {
         border-bottom: solid var(--light-color);
+    }
+
+    /* Main Content Styling */
+    .main-header {
+        font-size: 1.75rem;
+    }
+
+    .main-header>h1 {
+        cursor: pointer;
+    }
+
+    .main-header>span {
+        transition: .5s linear;
+    }
+
+    .cross {
+        top: 60%;
+        width: 230px;
     }
 
     /* Hover Effects */
@@ -54,5 +69,16 @@
         border-bottom: solid var(--light-color);
     }
 
+    h1:hover>span {
+        margin-right: 5px;
+        text-transform: uppercase;
+    }
+
+    h1:hover>span {
+        color: #fff;
+        text-shadow: 0 0 10px #fff,
+            0 0 20px #fff,
+            0 0 40px #fff;
+    }
 
 }
