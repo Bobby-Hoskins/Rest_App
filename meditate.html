@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/medium-screen.css">
+    <link rel="stylesheet" href="CSS/large-screen.css">
+    <title>Rest</title>
+</head>
+
+<body>
+    <!-- Header with Main Navigation -->
+    <header class="header">
+        <nav class="nav-bar">
+            <!-- Logo -->
+            <img src="Images/Rest Logo.svg" alt="Rest Logo" class="logo">
+            <!-- Nav-menu -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="meditate.html" class="nav-link current">Meditate</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Quotes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <!-- Mobile Hamburger Menu -->
+            <div class="mobile-hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Meditation Page -->
+    <div class="app">
+        <!-- Video -->
+        <div class="vid-container">
+            <video loop>
+                <source src="./Videos/forest-rain.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!-- Time Selection -->
+        <div class="time-select">
+            <button data-time="120" class="short-mins">2 Minutes</button>
+            <button data-time="300" class="medium-mins">5 Minutes</button>
+            <button data-time="600" class="long-mins">10 Minutes</button>
+            <button data-time="1200" class="long-mins">20 Minutes</button>
+        </div>
+        <!-- Player -->
+        <div class="player-container">
+            <audio class="song">
+                <source src="/Sounds/rain.mp3" />
+            </audio>
+            <img src="Images/play.svg" class="play"></img>
+            <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20" />
+            </svg>
+            <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="#00B3FE" stroke-width="20" />
+            </svg>
+            <img src="Images/replay.svg" class="replay"></img>
+            <h3 class="time-display">0:00</h3>
+        </div>
+        <!-- Sound Selection -->
+        <div class="sound-picker">
+            <button data-sound="Sounds/rain.mp3" data-video="Videos/forest-rain.mp4"><img src="Images/icons/rain.svg"
+                    alt="rain"></button>
+            <button data-sound="Sounds/ocean.mp3" data-video="Videos/ocean.mp4"><img src="Images/icons/ocean.svg"
+                    alt="ocean"></button>
+            <button data-sound="Sounds/waterfall.mp3" data-video="Videos/waterfall.mp4"><img
+                    src="Images/icons/waterfall.svg" alt="waterfall"></button>
+            <button data-sound="Sounds/night-sky.mp3" data-video="Videos/night-sky.mp4"><img src="Images/icons/moon.svg"
+                    alt="night-sky"></button>
+        </div>
+    </div>
+
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
