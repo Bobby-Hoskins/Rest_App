@@ -8,6 +8,16 @@
     list-style: none;
 }
 
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
 /* CSS Variables */
 :root {
     --main-color: #00EAFF;
@@ -16,27 +26,31 @@
     --dark-color: #272932;
 }
 
+
 /* Main Navigation */
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
     padding: 1rem 1.5rem;
+    z-index: -10;
 }
 
 /* Logo */
 .logo {
-    height: 75px;
+    width: 35%;
     padding-left: 1.75rem;
     padding-top: 0;
+    padding-bottom: 2rem;
 }
 
 /* Navigation Menu */
 .nav-menu {
     position: fixed;
     left: 100%;
-    top: 6.5rem;
+    top: 7.5rem;
     flex-direction: column;
     background-image: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
     width: 100%;
@@ -54,7 +68,7 @@
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: #fff;
+    background-color: var(--light-color);
 }
 
 .nav-menu.active {
@@ -68,7 +82,7 @@
 .nav-link {
     text-decoration: none;
     color: var(--light-color);
-    font-size: 1.75rem;
+    font-size: 2rem;
     font-family: 'Teko', sans-serif;
 }
 
@@ -107,28 +121,152 @@
     text-align: center;
     align-items: center;
     font-family: 'Bad Script', cursive;
-    font-size: 1.25rem;
+    font-size: 2rem;
     color: var(--light-color);
 }
 
-
 .cross {
-    width: 200px;
+    width: 50%;
     position: absolute;
     top: 55%;
+}
+
+/* Meditation Page */
+.app {
+    display: flex;
+    height: 100vh;
+    font-family: 'Teko', sans-serif;
+}
+
+/* Video */
+video {
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -10;
+}
+
+/* Time Section */
+.time-select {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    flex: 1;
+
+}
+
+.time-select button {
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%;
+    margin: 2rem;
+    background: none;
+    font-size: 1.4rem;
+    padding: 3rem;
+    cursor: pointer;
+    border: 2px solid var(--light-color);
+    transition: all 0.5s ease;
+}
+
+/* Player Container */
+.player-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+.player-container svg {
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
+}
+
+.player-container svg circle {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Time Display */
+.time-display {
+    color: var(--light-color);
+    position: relative;
+    top: -5%;
+    font-size: 5.5rem;
+}
+
+/* Sound Picker */
+.sound-picker {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 10%;
+    align-items: center;
+    flex: 1;
+
+}
+
+.sound-picker button {
+    border: none;
+    height: 7.5rem;
+    width: 7.5rem;
+    padding: 1.5rem;
+    margin: 2rem;
+    border-radius: 50%;
+}
+
+.sound-picker button:nth-child(odd) {
+    background: var(--main-color);
+}
+
+.sound-picker button:nth-child(even) {
+    background: var(--secondary-color);
+}
+
+.sound-picker button img {
+    height: 100%;
+    width: 100%;
+}
+
+/* SVG Play Icon */
+.play {
+    position: relative;
+    top: -20%;
+    left: 3%;
+    width: 25%;
+
 }
 
 /* Footer */
 footer {
     background-image: linear-gradient(to right, #272932, #39465a, #426885, #408caf, #32b3d5, #32b3d5, #32b3d5, #32b3d5, #408caf, #426885, #39465a, #272932);
+    margin-bottom: 0%;
 }
 
 .footer-content {
     display: flex;
-    height: 100px;
     justify-content: center;
+    height: 100px;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--light-color);
 
 }
