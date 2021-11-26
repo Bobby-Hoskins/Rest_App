@@ -1,12 +1,69 @@
 /* Medium Screen Size Styling */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+
+    /* Main Navigation */
+    /* Logo */
+    .logo {
+        padding-left: 2.5rem;
+    }
+
+    /* Navigation Menu */
+    .nav-menu {
+        top: 14rem;
+    }
+
+    /* Mobile Menu */
+
+    .bar {
+        width: 3rem;
+    }
+
+    .nav-link {
+        font-size: 3rem;
+    }
+
+    /* Mobile Hamburger */
+    .mobile-hamburger {
+        padding-right: 1.5rem;
+    }
 
     /* Main Content */
     .main-header {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
-    .cross {
-        width: 215px;
+
+    /* Meditation App */
+    /* Time Button */
+    .time-select button {
+        height: 10rem;
+        width: 10rem;
+        font-size: 1.6rem;
+
     }
+
+    .time-display {
+        font-size: 6.5rem;
+    }
+
+    /* Sound Button */
+    .sound-picker button {
+        height: 10rem;
+        width: 10rem;
+        padding: 3rem;
+        margin: 2.2rem;
+
+    }
+
+    /* Play */
+    .play {
+        width: 30%;
+        top: -21%;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 1.6rem;
+    }
+
 }
