@@ -1,5 +1,5 @@
 /* Large Screen Styling */
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
     /* Hides Mobile Display */
     .mobile-hamburger {
@@ -12,7 +12,9 @@
 
     /* Logo */
     .logo {
-        height: 100px;
+        width: 15%;
+        padding-top: 1rem;
+        padding-left: 4rem;
     }
 
     /* Desktop Navigation Menu */
@@ -37,7 +39,7 @@
     .nav-link {
         text-decoration: none;
         color: var(--light-color);
-        font-size: 1.85rem;
+        font-size: 3.25rem;
         font-family: 'Teko', sans-serif;
     }
 
@@ -47,7 +49,7 @@
 
     /* Main Content Styling */
     .main-header {
-        font-size: 1.75rem;
+        font-size: 2.75rem;
     }
 
     .main-header>h1 {
@@ -59,8 +61,48 @@
     }
 
     .cross {
-        top: 60%;
-        width: 230px;
+        width: 20%;
+    }
+
+    /* Meditation App */
+    .app {
+        margin-bottom: 5%;
+    }
+
+    /* Time Section */
+
+    .time-select button {
+        width: 45%;
+        height: 10%;
+        border-radius: 30px;
+    }
+
+    /* Player Container */
+
+    .player-container svg {
+        width: 65%;
+        top: 50%;
+        left: 50%;
+    }
+
+    /* Time Display */
+    .time-display {
+        top: 30%;
+    }
+
+    /* Sound Picker */
+
+    .sound-picker button {
+        height: 8.5rem;
+        width: 8.5rem;
+        padding: 2rem;
+        margin: 1.5rem;
+    }
+
+    /* SVG Play Icon */
+    .play {
+        width: 15%;
+        top: 5%;
     }
 
     /* Hover Effects */
@@ -81,4 +123,8 @@
             0 0 40px #fff;
     }
 
+    .time-select button:hover {
+        background: var(--main-color);
+        color: var(--dark-color);
+    }
 }
