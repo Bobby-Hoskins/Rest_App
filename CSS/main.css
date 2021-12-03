@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Cardo&family=Teko:wght@300&display=swap');
+
 
 /* Global Presets */
 * {
@@ -23,7 +24,7 @@ body {
     --main-color: #00EAFF;
     --secondary-color: #00B3FE;
     --light-color: #F8F9FA;
-    --dark-color: #272932;
+    --dark-color: #3C3E3E;
 }
 
 
@@ -162,7 +163,7 @@ video {
 
 }
 
-.time-select button {
+.time-select>button {
     color: var(--light-color);
     display: flex;
     justify-content: center;
@@ -191,7 +192,7 @@ video {
 }
 
 
-.player-container svg {
+.player-container>svg {
     position: absolute;
     width: 100%;
     top: 25%;
@@ -200,7 +201,7 @@ video {
     pointer-events: none;
 }
 
-.player-container svg circle {
+.player-container>svg>circle {
     transition: all 0.2s ease-in-out;
 }
 
@@ -224,7 +225,7 @@ video {
 
 }
 
-.sound-picker button {
+.sound-picker>button {
     border: none;
     height: 7.5rem;
     width: 7.5rem;
@@ -233,15 +234,15 @@ video {
     border-radius: 50%;
 }
 
-.sound-picker button:nth-child(odd) {
+.sound-picker>button:nth-child(odd) {
     background: var(--main-color);
 }
 
-.sound-picker button:nth-child(even) {
+.sound-picker>button:nth-child(even) {
     background: var(--secondary-color);
 }
 
-.sound-picker button img {
+.sound-picker>button>img {
     height: 100%;
     width: 100%;
 }
@@ -254,6 +255,113 @@ video {
     width: 25%;
 
 }
+
+/* Quotes Page */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: var(--light-color);
+}
+
+/* Main Content Container  */
+.main-content>.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 4rem 0;
+}
+
+/* Card */
+.main-content>.container>.card {
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    background-image: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
+    margin: 3rem;
+    transition: 0.5s;
+}
+
+.main-content>.container>.card:nth-child(odd) .box .content a {
+    background: var(--main-color);
+}
+
+.main-content>.container>.card:nth-child(even) .box .content a {
+    background: var(--secondary-color);
+}
+
+/* Card Box */
+.main-content>.container>.card>.box {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+    background: var(--dark-color);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+/* Card Content */
+.main-content>.container>.card>.box>.content {
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Cardo', serif;
+    color: var(--light-color);
+}
+
+
+.main-content>.container>.card>.box>.content>h2 {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    left: 2rem;
+    font-size: 2.75rem;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.main-content>.container>.card>.box>.content>h3 {
+    font-size: 1.8rem;
+    color: var(--light-color);
+    z-index: 1;
+    transition: 0.5s;
+    margin-bottom: 1.5rem;
+}
+
+.main-content>.container>.card>.box>.content>p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: var(--light-color);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+
+.main-content>.container>.card>.box>.content>a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: var(--dark-color);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--light-color);
+    margin-top: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
 
 /* Footer */
 footer {
