@@ -127,4 +127,18 @@
         background: var(--main-color);
         color: var(--dark-color);
     }
+
+    .main-content .container .card .box:hover {
+        transform: translateY(-50px);
+
+    }
+
+
+    .main-content>.container>.card>.box>.content>a:hover {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+        background: #fff;
+        color: #000;
+    }
+
+
 }
