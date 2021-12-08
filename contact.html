@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/medium-screen.css">
+    <link rel="stylesheet" href="CSS/large-screen.css">
+    <title>Rest | Rest Your Worries on Him</title>
+</head>
+
+<body>
+    <!-- Header with Main Navigation -->
+    <header class="header">
+        <nav class="nav-bar">
+            <!-- Logo -->
+            <img src="Images/Rest Logo.svg" alt="Rest Logo" class="logo">
+            <!-- Nav-menu -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="meditate.html" class="nav-link">Meditate</a>
+                </li>
+                <li class="nav-item">
+                    <a href="quotes.html" class="nav-link">Quotes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link current">Contact</a>
+                </li>
+            </ul>
+            <!-- Mobile Hamburger Menu -->
+            <div class="mobile-hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <!-- Contact Form -->
+    <div class="form-container">
+        <form id="form" class="form">
+            <h2>Contact Us</h2>
+            <div class="form-control">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Enter First Name" />
+            </div>
+            <div class="form-control">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Enter Last Name" />
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter Email" />
+
+            </div>
+            <div class="form-control">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="40" rows="8" placeholder="Enter Message Here"></textarea>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="cr-text">© Copyright 2021 Rest. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="JS/app.js"></script>
+</body>
+
+</html>
