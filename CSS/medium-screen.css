@@ -35,7 +35,7 @@
 
     /* Meditation App */
     /* Time Button */
-    .time-select button {
+    .time-select>button {
         height: 10rem;
         width: 10rem;
         font-size: 1.6rem;
@@ -47,7 +47,7 @@
     }
 
     /* Sound Button */
-    .sound-picker button {
+    .sound-picker>button {
         height: 10rem;
         width: 10rem;
         padding: 3rem;
@@ -60,6 +60,12 @@
         width: 30%;
         top: -21%;
     }
+
+    /* About Page */
+    .about-content {
+        font-size: 2.5rem;
+    }
+
 
     /* Footer */
     footer {
