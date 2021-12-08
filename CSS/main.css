@@ -396,6 +396,77 @@ video {
 
 }
 
+/* Contact Form */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--light-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 35rem;
+    margin: 3rem auto;
+}
+
+.form-container>.form>h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+    font-family: 'Teko', sans-serif;
+    font-size: 2.5rem;
+}
+
+.form {
+    padding: 3rem 4rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.form-control>label {
+    color: var(--dark-color);
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.6rem;
+}
+
+.form-control>input {
+    border: 2px solid var(--light-color);
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+}
+
+.form-control>input:focus {
+    outline: 0;
+    border-color: var(--dark-color);
+}
+
+.form-control>textarea {
+    padding: 0.75rem;
+}
+
+.form>button {
+    cursor: pointer;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    color: var(--light-color);
+    display: block;
+    font-size: 1.6rem;
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
 
 
 
