@@ -66,6 +66,19 @@
         font-size: 2.5rem;
     }
 
+    /* Contact Page */
+    .form-container {
+        width: 45rem;
+    }
+
+    .form-container>.form>h2 {
+        font-size: 3rem;
+    }
+
+    .form-control>label {
+        font-size: 2rem;
+    }
+
 
     /* Footer */
     footer {

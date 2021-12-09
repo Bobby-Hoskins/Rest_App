@@ -129,6 +129,10 @@
         padding: 3rem;
     }
 
+    /* Contact Page */
+    .form-container {
+        width: 75rem;
+    }
 
 
     /* Hover Effects */
@@ -167,4 +171,8 @@
     }
 
 
+    .form-container>.form>button:hover {
+        background: var(--light-color);
+        color: var(--dark-color);
+    }
 }
