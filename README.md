@@ -13,7 +13,7 @@ Although Rest uses several of the listed requirements needed, the four features 
 - Collapsing Menu
 - Flexbox Layout
 - Nth-Child Pseudo Classes
-- JavaScript Varables
+- JavaScript Variables
 
 ## Features
 
@@ -45,8 +45,4 @@ Throughout the webapp, the layout of the content is mostly utilizing flexbox. Fl
 The nth child pseudo-class is used in different ways on the webapp. It’s utilized in the mobile menu to transform the mobile hamburger menu. It’s also used to target even and odd buttons on the meditation page to assign the background of the button a color. The same was done on the quotes page. 
 JavaScript variables were used throughout the webapp to help add functionality. The mobile menu and meditation app both used JavaScript varables.
 
-
-## License
-
-MIT
 
