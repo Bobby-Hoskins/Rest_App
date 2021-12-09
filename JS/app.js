@@ -22,23 +22,25 @@ function closeMenu() {
 // Meditation App 
 const song = document.querySelector(".song");
 const play = document.querySelector(".play");
-const replay = document.querySelector(".replay");
 const outline = document.querySelector(".moving-outline circle");
 const video = document.querySelector(".vid-container video");
 //Sounds
 const sounds = document.querySelectorAll(".sound-picker button");
 //Time Display
 const timeDisplay = document.querySelector(".time-display");
+// Circle Length
 const outlineLength = outline.getTotalLength();
 //Duration
 const timeSelect = document.querySelectorAll(".time-select button");
 let fakeDuration = 600;
 
-outline.style.strokeDashoffset = outlineLength;
 outline.style.strokeDasharray = outlineLength;
+outline.style.strokeDashoffset = outlineLength;
 timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
   fakeDuration % 60
 )}`;
+
+// Sound Selection
 
 sounds.forEach(sound => {
     sound.addEventListener("click", function () {
@@ -47,7 +49,7 @@ sounds.forEach(sound => {
         checkPlaying(song);
     });
 });
-
+// Play Sound
 play.addEventListener("click", function () {
     checkPlaying(song);
 });
@@ -60,6 +62,7 @@ const restartSong = song => {
 
 }
 
+// Time Selection
 timeSelect.forEach(option => {
     option.addEventListener("click", function () {
         fakeDuration = this.getAttribute("data-time");
@@ -69,11 +72,12 @@ timeSelect.forEach(option => {
     });
 });
 
+// Play & Pause
 const checkPlaying = song => {
     if (song.paused) {
         song.play();
         video.play();
-        play.src = "Images/play.svg";
+        play.src = "Images/pause.svg";
     } else {
         song.pause();
         video.pause();
@@ -81,6 +85,7 @@ const checkPlaying = song => {
     }
 };
 
+// Circle Animation
 song.ontimeupdate = function () {
     let currentTime = song.currentTime;
     let elapsed = fakeDuration - currentTime;
@@ -97,3 +102,4 @@ song.ontimeupdate = function () {
         video.pause();
     }
 };
+app();
